@@ -2,12 +2,10 @@ This project forms the starting point for the [Origami tutorial](https://weborig
 
 This repository provides just a few files as a head start.
 
-If you'd prefer to create every file by hand to confirm there's no magic involved, create your own project folder with a `package.json` file like the one here, and create some sample blog post files like those in the `markdown` folder.
+If you'd prefer to create every file by hand to confirm there's no magic involved, create your own project folder with a `package.json` file like the one here, and create some sample blog post files like those in the `markdown` folder. Finally, create an empty `src` folder.
 
-Either way, you'll want to then
+Then use a currently-maintained version of [Node.js](https://nodejs.org) (v20 or later) to install Origami with:
 
 ```console
 $ npm install
 ```
-
-to install Origami for this project.
