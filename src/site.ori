@@ -1,0 +1,12 @@
+{
+  assets/
+  index.html = index.ori(postData.ori)
+
+  posts/ = Tree.map(postData.ori, {
+    key: (post) => `${ post.slug }.html`
+    value: postPage.ori
+  })
+
+  feed.json = Tree.json(feed.ori(postData.ori))
+  feed.xml = Origami.rss(feed.json)
+}
