@@ -1,0 +1,21 @@
+(posts) => page.ori({
+  title: "My blog"
+  _body: Tree.indent`
+    <h1>My blog</h1>
+    <ul>
+      ${ Tree.map(posts, (post) => Tree.indent`
+        <li>
+          <a href="/posts/${ post.slug }.html">
+            ${ post.title }
+          </a>
+          —
+          ${ post.date.toLocaleDateString("en-US", { dateStyle: "short" }) }
+        </li>
+      `) }
+    </ul>
+    <footer>
+      <a href="/feed.xml">RSS feed</a>
+      <a href="/feed.json">JSON feed</a>
+    </footer>
+  `
+})

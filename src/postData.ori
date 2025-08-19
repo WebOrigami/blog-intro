@@ -1,0 +1,10 @@
+markdown/
+
+-> (files) => Tree.map(files, (file, fileName) => {
+  ...file
+  date: parseDate.js(fileName)
+  slug: Origami.slug(Origami.basename(fileName))
+  _body: Origami.mdHtml(file._body)
+})
+
+-> Tree.reverse

@@ -1,0 +1,7 @@
+(post) => page.ori({
+  title: post.title
+  _body: Tree.indent`
+    <h1>${ post.title }</h1>
+    <div>${ post._body }</div>
+  `
+})

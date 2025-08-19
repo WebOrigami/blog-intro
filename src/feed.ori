@@ -1,0 +1,16 @@
+// The posts in JSON Feed format
+(posts) => {
+  version: "https://jsonfeed.org/version/1.1"
+  title: "My blog"
+  feed_url: `https://example.com/feed.json`
+  home_page_url: `https://example.com`
+
+  // Map the post data to JSON Feed items
+  items: Tree.values(Tree.map(posts, (post) => {
+    content_html: post._body
+    date_published: post.date
+    id: url
+    title: post.title
+    url: `https://example.com/posts/${ post.slug }.html`
+  }))
+}

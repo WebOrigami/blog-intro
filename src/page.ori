@@ -1,0 +1,22 @@
+// Base page template for all pages
+(page) => Tree.indent`
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="/assets/styles.css">
+      <link rel="alternate" type="application/rss+xml" href="/feed.xml">
+      <link rel="alternate" type="application/json" href="/feed.json">
+      <title>${ page.title }</title>
+    </head>
+    <body>
+      <header>
+        <a href="/">My blog</a>
+      </header>
+      <main>
+        ${ page._body }
+      </main>
+    </body>
+  </html>
+`
