@@ -1,0 +1,11 @@
+{
+  "name": "blog-intro",
+  "type": "module",
+  "dependencies": {
+    "@weborigami/origami": "0.4.2"
+  },
+  "scripts": {
+    "build": "ori copy src/site.ori, clear files:build",
+    "start": "ori serve watch src, =debug src/site.ori"
+  }
+}
