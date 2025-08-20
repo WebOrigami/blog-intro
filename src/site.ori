@@ -3,7 +3,7 @@
   index.html = index.ori(postData.ori)
 
   posts/ = Tree.map(postData.ori, {
-    key: (post) => `${ post.slug }.html`
+    extension: "->.html"
     value: postPage.ori
   })
 
