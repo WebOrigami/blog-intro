@@ -1,3 +1,4 @@
+// Define the site structure
 {
   assets/
   index.html = index.ori(postData.ori)
