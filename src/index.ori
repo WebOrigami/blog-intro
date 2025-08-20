@@ -3,9 +3,9 @@
   _body: Tree.indent`
     <h1>My blog</h1>
     <ul>
-      ${ Tree.map(posts, (post) => Tree.indent`
+      ${ Tree.map(posts, (post, slug) => Tree.indent`
         <li>
-          <a href="/posts/${ post.slug }.html">
+          <a href="/posts/${ slug }.html">
             ${ post.title }
           </a>
           —

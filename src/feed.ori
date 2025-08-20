@@ -6,11 +6,11 @@
   home_page_url: `https://example.com`
 
   // Map the post data to JSON Feed items
-  items: Tree.values(Tree.map(posts, (post) => {
+  items: Tree.values(Tree.map(posts, (post, slug) => {
     content_html: post._body
     date_published: post.date
     id: url
     title: post.title
-    url: `https://example.com/posts/${ post.slug }.html`
+    url: `https://example.com/posts/${ slug }.html`
   }))
 }
