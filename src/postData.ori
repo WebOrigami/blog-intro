@@ -1,11 +1,23 @@
 // Blog post data pipeline
+
+// markdown/
+
+// Tree.map(markdown/, {
+//   extension: ".md->"
+//   value: (file, fileName) => {
+//     ...file
+//     date: parseDate.js(fileName)
+//     _body: Origami.mdHtml(file._body)
+//   }
+// })
+
 Tree.reverse(
   Tree.map(markdown/, {
     extension: ".md->"
     value: (file, fileName) => {
       ...file
-      date: parseDate.js(fileName)
       _body: Origami.mdHtml(file._body)
+      date: parseDate.js(fileName)
     }
   })
 )

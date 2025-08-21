@@ -1,7 +1,7 @@
 // Define the site structure
 {
   assets/
-  index.html = index.ori(postData.ori)
+  index.html = indexPage.ori(postData.ori)
 
   posts/ = Tree.map(postData.ori, {
     extension: "->.html"

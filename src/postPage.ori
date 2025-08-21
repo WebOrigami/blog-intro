@@ -1,3 +1,4 @@
+// A page for a single post
 (post) => page.ori({
   title: post.title
   _body: Tree.indent`
