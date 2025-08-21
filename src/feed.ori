@@ -2,8 +2,8 @@
 (posts) => {
   version: "https://jsonfeed.org/version/1.1"
   title: "My blog"
-  feed_url: `https://example.com/feed.json`
-  home_page_url: `https://example.com`
+  feed_url: "https://example.com/feed.json"
+  home_page_url: "https://example.com"
 
   // Map the post data to JSON Feed items
   items: Tree.values(Tree.map(posts, (post, slug) => {
