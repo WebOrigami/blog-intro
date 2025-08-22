@@ -6,9 +6,7 @@
     <ul>
       ${ Tree.map(posts, (post, slug) => Tree.indent`
         <li>
-          <a href="/posts/${ slug }.html">
-            ${ post.title }
-          </a>
+          <a href="/posts/${ slug }.html">${ post.title }</a>
           —
           ${ post.date.toLocaleDateString("en-US", { dateStyle: "short" }) }
         </li>
