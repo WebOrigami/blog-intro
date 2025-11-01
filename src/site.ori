@@ -3,7 +3,7 @@
   assets/
   index.html = indexPage.ori(postData.ori)
 
-  posts/ = Tree.map(postData.ori, {
+  posts/ = Tree.mapExtension(postData.ori, {
     extension: "->.html"
     value: postPage.ori
   })

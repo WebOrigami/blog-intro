@@ -1,6 +1,6 @@
 // Blog post data pipeline
 Tree.reverse(
-  Tree.map(markdown/, {
+  Tree.mapExtension(markdown/, {
     extension: ".md->"
     value: (file, fileName) => {
       ...file
