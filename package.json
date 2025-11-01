@@ -2,7 +2,7 @@
   "name": "blog-intro",
   "type": "module",
   "dependencies": {
-    "@weborigami/origami": "0.5.1"
+    "@weborigami/origami": "0.5.7"
   },
   "scripts": {
     "build": "ori copy src/site.ori, clear files:build",
